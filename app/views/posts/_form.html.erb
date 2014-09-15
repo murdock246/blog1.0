@@ -1,22 +1,25 @@
 <%= form_for @post do |f| %>
   <% if @post.errors.any? %>
   <div id="error_explanation">
-    <h2><%= pluralize(@post.errors.count, "error") %> prohibited
-      this post from being saved:</h2>
+    <p class= "bg-danger" ><%= pluralize(@post.errors.count, "error") %> prohibited
+      this post from being saved:</p>
+
     <ul>
-    <% @post.errors.full_messages.each do |msg| %>
-      <li><%= msg %></li>
-    <% end %>
+      <% @post.errors.full_messages.each do |msg| %>
+        <p  class= "bg-danger" > <%= msg %></p>
+      <% end %>
     </ul>
   </div>
   <% end %>
+
   <p>
-    <%= f.label :title %><br>
+    <p class="lead"><%= f.label :title %></p>
     <%= f.text_field :title %>
   </p>
- 
+  <br>
+
   <p>
-    <%= f.label :text %><br>
+    <p class="lead"><%= f.label :text %></p>
     <%= f.text_area :text %>
   </p>
  

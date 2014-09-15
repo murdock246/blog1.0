@@ -1,12 +1,31 @@
-<p><!para mostrar los posts por separado acabados de crear>
-  <strong>Title:</strong>
-  <%= @post.title %>
-</p>
- 
+<p class="text-center"><body background="http://www.fondos7.net/wallpaper-original/wallpapers/nubes-de-verano-3030.jpg" ></p>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
 <p>
-  <strong>Text:</strong>
-  <%= @post.text %>
+	<h3><strong><u>Title:</u></strong></h3><br>
+	<strong><p class="lead"><%= @post.title %></p></strong>
 </p>
 
-<%= link_to 'Back', posts_path %>
-| <%= link_to 'Edit', edit_post_path(@post) %>
+<p>
+	<h3><strong><u>Text:</u></strong></h3><br>
+  	</div>
+		<div class="row">
+	  	<div class="col-md-6 col-md-offset-3"><strong><p class="lead"><%= @post.text %></p></strong></div>
+	</div>
+</p>
+
+</div>
+		<div class="row">
+	  	<div class="col-md-6 col-md-offset-3"><strong><u><%= link_to 'Back', posts_path %></u>
+	  	| <u><%= link_to 'Edit', edit_post_path(@post) %></u></strong></div>
+</div>
+
